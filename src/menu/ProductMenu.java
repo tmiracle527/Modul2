@@ -82,7 +82,7 @@ public class ProductMenu {
     public void updateProduct() {
         System.out.println("=====Sửa Sản Phẩm=====");
 
-        String str = "Nhập ID Sản Phẩm(vd: sp01/SP01): ";
+        String str = "Nhập ID Sản Phẩm(vd: p01/P01): ";
         String productId = check.checkRegex(str, Check.PRODUCT_ID);
         if (productManagement.findIndexById(productId) == -1) {
             System.out.println("Không Tìm Được Sản Phẩm Với Mã Sản Phẩm Trên !!!");
